@@ -21,7 +21,11 @@ export default function GoogleLoginButton() {
         name:payload.name,
         email:payload.email,
         picture:payload.picture
-      });
+      }, {
+          headers: {
+            "Content-Type": "application/json"
+          },
+        },);
 
     if (res.status === 200 && res.data.access) {
 

@@ -15,7 +15,13 @@ const RecruiterSignUp = () => {
     setError("");
 
     try {
-      const response = await axios.post("https://talentbridge-w9yv.onrender.com/api/auth/recruiter/", data);
+      const response = await axios.post("https://talentbridge-w9yv.onrender.com/api/auth/recruiter/", data, 
+        {
+          headers: {
+            "Content-Type": "application/json"
+          },
+        },
+      );
       const { access, refresh, user, user_type } = response.data;
 
       localStorage.setItem("recruiter_access_token", access);

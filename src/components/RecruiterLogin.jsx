@@ -17,7 +17,12 @@ const RecruiterLogin = () => {
     try {
       const response = await axios.post(
         "https://talentbridge-w9yv.onrender.com/api/auth/recruiter/login/",
-        data
+        data,
+        {
+          headers: {
+            "Content-Type": "application/json"
+          },
+        },
       );
 
       const { access, refresh, user } = response.data;
