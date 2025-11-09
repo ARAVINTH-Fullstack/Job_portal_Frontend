@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import RecruiterSignUp from "./RecruiterSignUp";
-import RecruiterLogin from "./Recruiterlogin";
+import RecruiterLogin from "./RecruiterLogin";
 import { WandSparkles, Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import axiosInstance from "../axiosConfig";
