@@ -16,7 +16,7 @@ const RecruiterLogin = () => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/auth/recruiter/login/",
+        "https://talentbridge-w9yv.onrender.com/api/auth/recruiter/login/",
         data
       );
 

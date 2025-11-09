@@ -15,10 +15,9 @@ export default function GoogleLoginButton() {
     const idToken = credentialResponse.credential;
     // Optional: decode to show name/picture locally
     const payload = jwtDecode(idToken); // {name, email, picture, sub, ...}
-    console.log("Decoded payload:", payload);
 
     // Send to backend for verification / user creation:
-    const res = await axios.post("http://127.0.0.1:8000/api/auth/", {
+    const res = await axios.post("https://talentbridge-w9yv.onrender.com/api/auth/", {
         name:payload.name,
         email:payload.email,
         picture:payload.picture
