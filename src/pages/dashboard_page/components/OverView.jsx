@@ -44,7 +44,7 @@ const OverView = () => {
           </div>
 
           {/* Applications */}
-          <div className='flex flex-col'>
+          <div className='flex flex-col bg-white'>
             <div className='flex justify-between items-center'>
               <h1 className='text-cyan-500'>Applications</h1>
               <p>{stats.total_applied}/{stats.applied_goal}</p>
@@ -55,7 +55,7 @@ const OverView = () => {
           </div>
 
           {/* Interviews */}
-          <div className='flex flex-col'>
+          <div className='flex flex-col bg-white'>
             <div className='flex justify-between items-center'>
               <h1 className='text-cyan-500'>Interviews</h1>
               <p>{stats.interviewed}/{stats.interview_goal}</p>
